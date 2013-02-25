@@ -1,0 +1,13 @@
+{
+  "name"          : "refreshing",
+  "description"   : "Refreshing Web Resources",
+  "url"           : "http://refreshingjs.com",
+  "keywords"      : ["css", "html", "markdown", "browser"],
+  "author"        : "Essential JavaScript <info@essentialjs.com>",
+  "contributors"  : [],
+  "version"       : "0.1",
+  "bin"           : { "refreshing": "./bin/refreshing" },
+  "main"          : "./lib/refreshing/index",
+  "directories"   : { "test": "./test" },
+  "engines"       : { "node": ">=0.4.0" }
+}
