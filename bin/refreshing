@@ -1,2 +1,6 @@
 #!/usr/bin/env node
 
+var base = process.cwd();
+if (process.argv.length > 2) base = require('path').join(base,process.argv[2]);
+//console.log(base)
+require("../lib/refreshing/index").watchTrees(__dirname,base);
