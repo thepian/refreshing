@@ -17,7 +17,7 @@
 		"test" : "./test/test-all.js"
 	},
 	"dependencies"	: {
-		"fs.extra"	: ">=1.2.0",
+		"fs-extra"	: ">=0.5.0",
 		"argparse"	: ">=0.1.12",
 		"underscore": ">=1.4.4",
 		"when"		: ">=1.8.0",
