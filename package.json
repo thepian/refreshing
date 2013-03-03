@@ -1,6 +1,6 @@
 {
 	"name"          : "refreshing",
-	"version"       : "0.1",
+	"version"       : "0.1.5",
 	"description"   : "Refreshing Web Resources",
 	"url"           : "http://refreshingjs.com",
 	"keywords"      : ["css", "html", "markdown", "browser"],
