@@ -6,3 +6,7 @@ var base = __dirname;
 base = require('path').join(__dirname,"mini-site");
 
 require("../lib/refreshing/index").watchTrees(__dirname,base);
+
+base = require('path').join(__dirname,"sub-out");
+
+require("../lib/refreshing/index").watchTrees(__dirname,base);
