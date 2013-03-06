@@ -1,4 +1,4 @@
-port: 4444
+server_port: 8900
 title: Mini
 exclude: to-exclude
 destination: ../out/mini-site
