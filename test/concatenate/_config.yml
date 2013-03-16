@@ -1,0 +1,4 @@
+exclude: to-exclude
+destination: ../out/concatenate
+concatenate:
+- js/test1+test2.js

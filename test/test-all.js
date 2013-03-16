@@ -1,10 +1,29 @@
-#!/usr/bin/env nodeunit
+#!/usr/bin/env mocha
 
-exports.testConcatenate = function(test) {
-	test.expect(1);
-	test.ok(true,"hmm strange");
-	test.done();
-};
+var fs = require("fs"), path = require("path");
+var source = require("../lib/refreshing/source"), watchTree = require("fs-watch-tree").watchTree;
+
+var assert = require("assert")
+
+describe('SourceTree', function(){
+  describe('#concatenate:', function(){
+    it('should create files listed in concatenate properties', function(){
+
+		var a = "concatenate", options = {};
+		// options.startedCallback = function() {
+		// 	test.done();
+		// };
+
+		var tree = new source.SourceTree(a,options);
+		//		watchTree(a, options, tree.trigger.bind(tree));
+
+
+
+      assert.equal(-1, [1,2,3].indexOf(5));
+      assert.equal(-1, [1,2,3].indexOf(0));
+    })
+  })
+})
 
 /*
 var base = __dirname;
