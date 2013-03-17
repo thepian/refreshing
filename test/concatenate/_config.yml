@@ -1,4 +1,5 @@
 exclude: to-exclude
 destination: ../out/concatenate
 concatenate:
-- js/test1+test2.js
+- js/test1+test2+test4.js
+- js/test1+test2+test3.min.js
