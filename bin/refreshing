@@ -3,4 +3,7 @@
 var base = process.cwd();
 if (process.argv.length > 2) base = require('path').join(base,process.argv[2]);
 //console.log(base)
-require("../lib/refreshing/index").watchTrees(__dirname,base);
+var refreshing = require("../lib/refreshing/index");
+
+if (process.argv[2] == "--server") refreshing.justServer(__dirname,process.cwd(),process.argv[3]);
+else refreshing.watchTrees(__dirname,base);

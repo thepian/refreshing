@@ -17,6 +17,7 @@
 		"test" : "./test/test-all.js"
 	},
 	"dependencies"	: {
+		"connect"	: "*",
 		"fs-extra"	: ">=0.5.0",
 		"argparse"	: ">=0.1.12",
 		"underscore": ">=1.4.4",
