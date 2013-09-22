@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 
-var base = process.cwd();
-if (process.argv.length > 2) base = require('path').join(base,process.argv[2]);
-//console.log(base)
+function basePath(idx) {
+	var base = process.cwd();
+	if (process.argv.length > idx) base = require('path').join(base,process.argv[idx]);
+	return base;
+}
+
 var refreshing = require("../lib/refreshing/index");
 
-if (process.argv[2] == "--server") refreshing.justServer(__dirname,process.cwd(),process.argv[3]);
-else refreshing.watchTrees(__dirname,base);
+if (process.argv[2] == "--once") refreshing.once(__dirname,process.cwd(),basePath(3));
+else if (process.argv[2] == "--server") refreshing.justServer(__dirname,process.cwd(),basePath(3));
+else refreshing.watchTrees(__dirname,basePath(2));
