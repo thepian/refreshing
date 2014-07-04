@@ -1,2 +1,4 @@
 .DS_Store
 /test/out/
+/node_modules/.bin/
+/node_modules/docco/
